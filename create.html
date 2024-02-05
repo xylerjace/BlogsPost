@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div>
+            <h1 id="title">Blog<span>Post</span></h1>
+            <ul id="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./create.html">Create Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 id="publish">Publish a new Blog</h1>
+
+    <form action="/addBlog" method="post" id="blogForm">
+        <label for="subject"> Add blog title </label><br>
+        <input id="input-title" type="text" placeholder="example: The 9/11 terrorism">
+        <label for="blog-content">Add content</label>
+        <textarea name="content" id="blog-content" cols="30" rows="10" placeholder="example: The September 11 attacks killed nearly 3,000 people, the most deadly terrorist..."></textarea>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
