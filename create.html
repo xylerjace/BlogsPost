@@ -19,12 +19,12 @@
     </nav>
     <h1 id="publish">Publish a new Blog</h1>
 
-    <form  id="blogForm">
+    <form  id="blogForm" method="post">
         <label for="subject"> Add blog title </label><br>
         <input name="title" id="input-title" type="text" placeholder="example: The 9/11 terrorism">
         <label for="blog-content">Add content</label>
         <textarea name="message" id="blog-content" cols="30" rows="10" placeholder="example: The September 11 attacks killed nearly 3,000 people, the most deadly terrorist..."></textarea>
-        <button id="submit">submit</button>
+        <input type="submit" value="Submit" id="submit">
     </form>
     <div id="myModal" class="modal">
         <div class="modal-content">
